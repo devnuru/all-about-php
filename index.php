@@ -70,25 +70,53 @@ echo "<h1>A $txt script is executed on the server, and the plain HTML result is 
 
 $name = "Md. Nuruzzaman Chowdhury";
 $age = 25;
-$x = 40;
-echo  $age + $x;
-echo "Hi, $name. Im $age years old! "
+echo "Hi, $name. Im $age years old! ";
 
 
 //PHP is a Loosely Typed Language
 
-PHP Variables Scope
+//PHP Variables Scope
 
-In PHP, variables can be declared anywhere in the script.
+//In PHP, variables can be declared anywhere in the script.
 
-The scope of variable is the part of of the script where the variable can be referenced/used.
+//The scope of variable is the part of of the script where the variable can be referenced/used.
 
-PHP has three different variable scopes:
-
+//PHP has three different variable scopes:
   #local
   #global
   #static
 
+// Global Scope
+$x = 25;
+function myFunc(){
+    echo "<p>Variable x inside function is: $x </p>";
+
+}
+myFunc();
+
+echo "<h1>Variable x outside function is: $x </h1>";
+
+
+// Local Scope
+
+function localV() {
+    $x = "Hello";
+    echo "<h2>$x world</h2>";
+}
+localV();
+
+//PHP The global Keyword
+//The global keyword is used to access a variable from within a function.
+$y= 50;
+function hello_global(){
+    global $x, $y;
+    $y = $x + $y;
+}
+hello_global();
+echo $y;
+
+//PHP also stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable. This array is also accessible from within functions and can be used to upadte global variables directly.
+//Ex-
 
 
 
