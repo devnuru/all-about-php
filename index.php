@@ -47,7 +47,7 @@ $txt = "PHP";
 
 echo "<h1>I love $txt!</h1>";
 
-echo "<h1>A $txt script is executed on the server, and the plain HTML result is sent back to the browser.</h1>"
+echo "<h1>A $txt script is executed on the server, and the plain HTML result is sent back to the browser.</h1>";
 
 // In PHP, keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are not case-sensitive.
 
@@ -64,6 +64,31 @@ echo "<h1>A $txt script is executed on the server, and the plain HTML result is 
 // git remote add origin https://github.com/devnuru/all-about-php.git
 // git branch -M main
 // git push -u origin main
+
+
+// Variables are "containers" for storing information.
+
+$name = "Md. Nuruzzaman Chowdhury";
+$age = 25;
+$x = 40;
+echo  $age + $x;
+echo "Hi, $name. Im $age years old! "
+
+
+//PHP is a Loosely Typed Language
+
+PHP Variables Scope
+
+In PHP, variables can be declared anywhere in the script.
+
+The scope of variable is the part of of the script where the variable can be referenced/used.
+
+PHP has three different variable scopes:
+
+  #local
+  #global
+  #static
+
 
 
 
