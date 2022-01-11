@@ -271,7 +271,44 @@ str_replace("world", "Nuruzzaman", "Hello World")
 
 
 
+Here are some rules for integers:
 
+  An integer must have at least one digit
+  An integer must NOT have a decimal point
+  An integer can be either positive or negative
+  Integers can be specified in three formats: decimal (10-based), hexadecimal (16-based - prefixed with 0x) or octal (8-based - prefixed with 0)
+  PHP has the following predefined constants for integers:
+  
+  PHP_INT_MAX - The largest integer supported
+  PHP_INT_MIN - The smallest integer supported
+  PHP_INT_SIZE -  The size of an integer in bytes
+  PHP has the following functions to check if the type of a variable is integer:
+  
+  is_int()
+  is_integer() - alias of is_int()
+  is_long() - alias of is_int()
+
+
+
+  PHP has the following predefined constants for floats (from PHP 7.2):
+
+    PHP_FLOAT_MAX - The largest representable floating point number
+    PHP_FLOAT_MIN - The smallest representable positive floating point number
+    - PHP_FLOAT_MAX - The smallest representable negative floating point number
+    PHP_FLOAT_DIG - The number of decimal digits that can be rounded into a float and back without precision loss
+    PHP_FLOAT_EPSILON - The smallest representable positive number x, so that x + 1.0 != 1.0
+    PHP has the following functions to check if the type of a variable is float:
+    
+    is_float()
+    is_double() - alias of is_float()
+
+    PHP Infinity
+A numeric value that is larger than PHP_FLOAT_MAX is considered infinite.
+
+PHP has the following functions to check if a numeric value is finite or infinite:
+
+is_finite()
+is_infinite()
 
 
 
