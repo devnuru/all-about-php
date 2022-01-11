@@ -311,6 +311,24 @@ is_finite()
 is_infinite()
 
 
+PHP NaN
+NaN stands for Not a Number.
+
+NaN is used for impossible mathematical operations.
+
+PHP has the following functions to check if a value is not a number:
+
+is_nan()
+
+PHP Numerical Strings
+The PHP is_numeric() function can be used to find whether a variable is numeric. The function returns true if the variable is a number or a numeric string, false otherwise.
+
+PHP Casting Strings and Floats to Integers
+Sometimes you need to cast a numerical value into another data type.
+
+The (int), (integer), or intval() function are often used to convert a value to an integer.
+
+
 
 
 
